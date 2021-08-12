@@ -1,2 +1,2 @@
 # Flexbox-Projects
-Learning Flexbox
+This repository contains flexbox learning projects.
