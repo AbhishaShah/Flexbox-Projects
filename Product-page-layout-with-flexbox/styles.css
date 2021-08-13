@@ -1,0 +1,107 @@
+html{
+    background-color:rgb(240, 239, 239);
+    display: flex;
+    justify-content: center;
+}
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px; 
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    width: 1200px;
+}
+.product-filter {
+    display: flex;
+}
+.product-filter h1 {
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.sort {
+    display: flex;
+}
+.collection-sort{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.collection-sort label {
+    color: rgb(117, 129, 141);
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.collection-sort select {
+    border:0px;
+    margin-top:5px;
+    background-color: rgb(240, 239, 239);
+    font-weight: bold;
+    color:rgb(66, 63, 63);
+    font-size: 12px;
+    padding: 0;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.product-card{
+    padding:1%;
+    flex-basis:20%;
+    flex-grow: 1;
+    border: 0.1px solid rgb(240, 237, 237);
+}
+.product-image img {
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+}
+.product-info {
+    margin-top: auto;
+    text-align: center;
+}
+.product-info h5 {
+    margin: 10px auto ;
+}
+.product-info h6 {
+    color:gray ;
+    margin: 10px auto ;
+    font-size: 12px;
+}
+.sold-out {
+    color:rgb(59, 104, 230) !important;
+    text-transform: uppercase;
+}
+.sale-item {
+    width: 100px;
+    background-color:rgb(59, 104, 230) ;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+}
+.original-price-decrese {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+@media  (max-width:920px) {
+    .product-card{
+        flex:1 25%;
+    }
+    
+}
+@media  (max-width:600px) {
+    .product-card{
+        flex:1 40%;
+    }
+    
+}
+@media  (max-width:480px) {
+    .product-filter {
+        flex-direction: column; 
+    }
+    
+}
+
+
