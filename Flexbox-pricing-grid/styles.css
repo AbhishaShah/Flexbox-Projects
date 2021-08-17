@@ -1,0 +1,59 @@
+html{
+    box-sizing: border-box;
+}
+body {
+    background-image: url("assets/multicolor-img.jpeg");
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pricing-grid{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+.plan {
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    background-color:rgba(150, 179, 218, 0.712);
+    display: flex;
+    flex-wrap: wrap;
+}
+.plan > * {
+ flex:1 1 100%;
+}
+.plan > h2 {
+    font-weight: 100px;
+}
+.plan > h2:hover {
+    color: rgba(236, 47, 179, 0.452);
+    cursor: pointer;
+}
+.dollar-sign{
+    font-size: 30px;
+    vertical-align: top;
+}
+.price {
+    font-size: 50px;
+}
+.description li > img {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+}
+.description li {
+    list-style: none;
+    padding: 5px;
+}
+.cta {
+    background-color: rgba(236, 47, 179, 0.452);
+    padding: 10px;
+    color:rgba(0, 0, 0, 0.616);
+    text-decoration: none;
+    align-self: flex-end;
+    font-size: 17px;
+}
